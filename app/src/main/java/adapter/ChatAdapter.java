@@ -46,7 +46,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatViewHolder> {
         username = messageObject.getUsername();
         holder.username.setText(messageObject.getUsername());
         if (!(username.equals(myUsername))) {
-            holder.chatHolder.setBackgroundColor(context.getResources().getColor(R.color.blue_400));
+            holder.chatHolder.setBackgroundColor(context.getResources().getColor(R.color.blue_200));
         }
         holder.message.setText(messageObject.getMessage());
     }

@@ -91,7 +91,7 @@ public class ChatFragment extends Fragment implements View.OnClickListener {
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            chatAdapter.notifyDataSetChanged();
+                            chatAdapter.notifyItemInserted(chatMessageList.size() - 1);
                             chatList.scrollToPosition(chatMessageList.size() - 1);
                         }
                     });
